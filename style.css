@@ -1,0 +1,80 @@
+/* -------------------- IMPORTED FONTS 
+-------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS RESET 
+---------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+  --white: #ffffff;
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --Dark-gray: #1E1E1E;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+body {
+  background-color: var(--purple);
+  font-family: 'Inter', serif;
+}
+
+header {
+  background-color: var(--lavender);
+  text-align: center;
+  color: var(--white);
+}
+
+header p {
+  background-color: var(--pink);
+}
+
+nav,
+main {
+  padding: 0 1em;
+}
+
+nav h2 {
+  font-size: 1.5em;
+}
+
+h1,
+h2 {
+  font-family: "Kavoon", serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-family: 1.15em;
+}
+
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 834px) {}
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 1280px) {}
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width: 1440px) {}
