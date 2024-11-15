@@ -39,6 +39,7 @@ header h1 {
   background-color: var(--lavender);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  position: relative;
 }
 
 header p {
@@ -46,6 +47,7 @@ header p {
   border-radius: 50px;
   text-align: center;
   padding: 1em .5em;
+
 }
 
 nav {
