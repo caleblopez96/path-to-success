@@ -20,7 +20,7 @@
   --lavender: #6B8FE7;
   --yellow: #E9BB57;
   --pink: #D9526F;
-  --Dark-gray: #1E1E1E;
+  --dark-gray: #1E1E1E;
 }
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
@@ -30,24 +30,48 @@ body {
 }
 
 header {
+  font-family: "Inter", sans-serif;
+  color: white;
   text-align: center;
-  color: var(--white);
+  margin-bottom: 2.5em;
 }
 
-header h1 {
-  padding: 1em .5em;
+.header-top {
   background-color: var(--lavender);
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  padding: 20px;
   position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-header p {
-  background-color: var(--pink);
-  border-radius: 50px;
-  text-align: center;
-  padding: 1em .5em;
+.header-top h1 {
+  padding: 0.25em 0;
+}
 
+.menu-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: var(--yellow);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.header-bottom {
+  background-color: var(--pink);
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.header-bottom p {
+  margin: 0;
+  text-align: center;
+  color: white;
 }
 
 nav {
@@ -55,9 +79,9 @@ nav {
 }
 
 nav,
-main {
-  padding: 0 1em;
-}
+main {}
+
+/* i moved the padding to the #services section*/
 
 nav h2 {
   font-size: 1.5em;
@@ -74,6 +98,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  color: var(--white);
 }
 
 h3 {
@@ -85,12 +110,138 @@ h4 {
   color: var(--purple);
 }
 
+section h3 {
+  color: var(--yellow);
+}
+
+#services {
+  padding: 0 1em;
+  /* i moved this from the main,nav{} selector*/
+}
+
 .card {
   background-color: var(--white);
   border-radius: 20px;
-  padding: 1.75em;
+  padding: 1.25em;
   line-height: 1.75em;
   margin: 1em 0;
+}
+
+#why-choose-us {
+  background-color: var(--pink);
+  padding: 1em;
+}
+
+#why-choose-us h2 {
+  padding: .25em 0;
+}
+
+#why-choose-us ul {
+  display: grid;
+  grid-template-areas:
+    "personalized-approach proven-results"
+    "supportive-environment flexible-options"
+  ;
+  place-items: center;
+  gap: 2em;
+}
+
+#why-choose-us li {
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+#personalized-approach {
+  grid-area: personalized-approach;
+  background-color: var(--teal);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+#proven-results {
+  grid-area: proven-results;
+  background-color: var(--lavender);
+  padding: 2em;
+  border-radius: 5px;
+}
+
+#supportive-environment {
+  grid-area: supportive-environment;
+  background-color: var(--yellow);
+  padding: 2em;
+  border-radius: 5px;
+}
+
+#flexible-options {
+  grid-area: flexible-options;
+  background-color: var(--white);
+  padding: 2em;
+  border-radius: 5px;
+}
+
+#pricing {
+  padding: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: var(--yellow);
+  margin: 1em auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+thead {
+  background-color: var(--yellow);
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 1em;
+  color: var(--dark-gray);
+}
+
+tbody tr {
+  background-color: var(--white);
+}
+
+
+td {
+  color: var(--dark-gray);
+  border: 1px solid var(--yellow);
+}
+
+#contact {
+  background-color: var(--pink);
+  padding: 1em;
+  color: var(--white);
+}
+
+#contact button {
+  width: 100%;
+  border-radius: 20px;
+  padding: 2em;
+  margin-top: 1em;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+footer {
+  padding: 2em;
+  background-color: var(--lavender);
+  margin-bottom: 4em;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  color: var(--white);
+}
+
+footer a:visited {
+  color: var(--white);
 }
 
 
