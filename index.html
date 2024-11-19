@@ -10,59 +10,73 @@
 
 <body>
   <header>
-    <div class="header-top">
-      <h1>Path to Success</h1>
-      <button class="menu-button">MENU</button>
-    </div>
-    <div class="header-bottom">
-      <p>Unlock your full potential</p>
-    </div>
+    <h1>Path to Success</h1>
+    <p id="small-screen">Unlock your full potential</p>
+    <p id="large-screen">Unlock your full potential with personalized life coaching</p>
   </header>
+
+  <nav>
+    <section>
+      <h2>Main</h2>
+      <ul>
+        <li><a href="#our-services">Our Services</a></li>
+        <li><a href="#why-choose-us">Why Choose Us</a></li>
+        <li><a href="#pricing">Prices</a></li>
+        <li><a href="#first-step">Take the First Step</a></li>
+      </ul>
+    </section>
+  </nav>
 
   <main>
     <section id="services">
       <h2>Our Services</h2>
 
-      <section id="One-on-One">
-        <h3>One-on-One Coaching</h3>
-        <div class="card">
-          <img src="images/personal-development.png" alt="teal icon of a smiling face">
-          <h4>Personal Development</h4>
-          <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building
-            confidence, breaking bad habits, or discovering your true purpose, we'll work together to create a clear
-            roadmap for success.</p>
-        </div>
-        <div class="card">
-          <img src="images/career-coaching.png" alt="teal icon of a smiling face">
-          <h4>Career Coaching</h4>
-          <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and build
-            the skills needed to thrive in your professional life.</p>
-        </div>
-        <div class="card">
-          <img src="images/relationship-coaching.png" alt="teal icon of a smiling face">
-          <h4>Relationship Coaching</h4>
-          <p>Enhance your relationships with better communication, understanding, and empathy. Whether it's family,
-            friends, or partners, we'll help you build stronger connections.</p>
+      <section id="one-on-one">
+        <div id="one-on-one-container">
+          <h3 id="one-on-one-coaching">One-on-One Coaching</h3>
+          <div class="card" id="personal-development">
+            <img src="images/personal-development.png" alt="teal icon of a smiling face">
+            <h4>Personal Development</h4>
+            <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building
+              confidence, breaking bad habits, or discovering your true purpose, we'll work together to create a clear
+              roadmap for success.</p>
+          </div>
+
+          <div class="card" id="career-coaching">
+            <img src="images/career-coaching.png" alt="teal icon of a smiling face">
+            <h4>Career Coaching</h4>
+            <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and
+              build
+              the skills needed to thrive in your professional life.</p>
+          </div>
+          <div class="card" id="relationship-coaching">
+            <img src="images/relationship-coaching.png" alt="teal icon of a smiling face">
+            <h4>Relationship Coaching</h4>
+            <p>Enhance your relationships with better communication, understanding, and empathy. Whether it's family,
+              friends, or partners, we'll help you build stronger connections.</p>
+          </div>
         </div>
       </section>
 
       <section id="group-coaching">
         <h3>Group Coaching</h3>
-        <div class="card">
-          <img src="images/supportive-community.png" alt="teal icon of a smiling face">
-          <h4>Supportive Community</h4>
-          <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building
-            confidence, breaking bad habits, or discovering your true purpose, we'll work together to create a clear
-            roadmap for success.</p>
-        </div>
-        <div class="card">
-          <img src="images/focused-session.png" alt="teal icon of a smiling face">
-          <h4>Focused Sessions</h4>
-          <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and build
-            the skills needed to thrive in your professional life.</p>
+        <div id="group-coaching-container">
+          <div class="card" id="supportive-community">
+            <img src="images/supportive-community.png" alt="teal icon of a smiling face">
+            <h4>Supportive Community</h4>
+            <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building
+              confidence, breaking bad habits, or discovering your true purpose, we'll work together to create a clear
+              roadmap for success.</p>
+          </div>
+          <div class="card" id="focused-session">
+            <img src="images/focused-session.png" alt="teal icon of a smiling face">
+            <h4>Focused Sessions</h4>
+            <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and
+              build
+              the skills needed to thrive in your professional life.</p>
+          </div>
         </div>
       </section>
-
       <section id="workshop-and-seminars">
         <h3>Workshops & Seminars</h3>
         <div class="card">
@@ -73,7 +87,6 @@
             roadmap for success.</p>
         </div>
       </section>
-
       <section id="online-courses">
         <h3>Online Courses</h3>
         <div class="card">
@@ -98,106 +111,109 @@
 
     <section id="pricing">
       <h2>Pricing</h2>
+      <div id="pricing-container">
+        <section>
+          <h3>One-on-One Coaching</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single Session</td>
+                <td>$150</td>
+              </tr>
+              <tr>
+                <td>Monthly Package</td>
+                <td>$550</td>
+              </tr>
+              <tr>
+                <td>3-month Package</td>
+                <td>$1500</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-      <section>
-        <h3>One-on-One Coaching</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Single Session</td>
-              <td>$150</td>
-            </tr>
-            <tr>
-              <td>Monthly Package</td>
-              <td>$550</td>
-            </tr>
-            <tr>
-              <td>3-month Package</td>
-              <td>$1500</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <section>
+          <h3>Group Coaching</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single Session</td>
+                <td>$75</td>
+              </tr>
+              <tr>
+                <td>Monthly Package</td>
+                <td>$250</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-      <section>
-        <h3>Group Coaching</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Single Session</td>
-              <td>$75</td>
-            </tr>
-            <tr>
-              <td>Monthly Package</td>
-              <td>$250</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <section>
+          <h3>Workshops & Seminars</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single Workshop</td>
+                <td>$150</td>
+              </tr>
+              <tr>
+                <td>Seminar Series</td>
+                <td>$250</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-      <section>
-        <h3>Workshops & Seminars</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Single Workshop</td>
-              <td>$150</td>
-            </tr>
-            <tr>
-              <td>Seminar Series</td>
-              <td>$250</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h3>Online Courses</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Single Workshop</td>
-              <td>$150</td>
-            </tr>
-            <tr>
-              <td>Webinar Series</td>
-              <td>$250</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <section>
+          <h3>Online Courses</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single Workshop</td>
+                <td>$150</td>
+              </tr>
+              <tr>
+                <td>Webinar Series</td>
+                <td>$250</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Take the First Step Today</h2>
-      <p>Your journey to a more fulfilling life begins with a single step. Book a free 30-minute consultation today to
-        discover how our coaching services can help you achieve your goals. Let's work together to create the life
-        you've always dreamed of!</p>
-      <button>SCHEDULE NOW</button>
+      <div id="contact-container">
+        <p>Your journey to a more fulfilling life begins with a single step. Book a free 30-minute consultation today to
+          discover how our coaching services can help you achieve your goals. Let's work together to create the life
+          you've always dreamed of!</p>
+        <button>SCHEDULE NOW</button>
+      </div>
     </section>
   </main>
 

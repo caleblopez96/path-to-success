@@ -24,64 +24,66 @@
 }
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
 body {
-  background-color: var(--purple);
-  font-family: 'Inter', serif;
-}
-
-header {
   font-family: "Inter", sans-serif;
-  color: white;
-  text-align: center;
-  margin-bottom: 2.5em;
+  background-color: var(--purple);
+  color: var(--dark-gray);
 }
 
-.header-top {
+h1,
+h2 {
+  font-family: "Kavoon", system-ui;
+  color: var(--white);
+}
+
+h1 {
+  font-size: 3em;
   background-color: var(--lavender);
-  padding: 20px;
+  padding: 1rem;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  z-index: 2;
+}
+
+header p {
+  background-color: var(--pink);
+  color: var(--white);
+  padding-top: 1em;
+  text-align: center;
+  margin: 0 10px;
+  padding-bottom: .25em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   position: relative;
+  bottom: 10px;
+  z-index: -1;
+}
+
+header #large-screen {
+  display: none;
+}
+
+nav h2 {
+  font-size: 1.5em;
+  color: var(--dark-gray);
+  background-color: var(--yellow);
+  width: 80px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.header-top h1 {
-  padding: 0.25em 0;
+nav ul {
+  visibility: hidden;
 }
-
-.menu-button {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  background-color: var(--yellow);
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.header-bottom {
-  background-color: var(--pink);
-  padding: 10px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.header-bottom p {
-  margin: 0;
-  text-align: center;
-  color: white;
-}
-
-nav {
-  display: none;
-}
-
-nav,
-main {}
-
-/* i moved the padding to the #services section*/
 
 nav h2 {
   font-size: 1.5em;
@@ -117,6 +119,30 @@ section h3 {
 #services {
   padding: 0 1em;
   /* i moved this from the main,nav{} selector*/
+}
+
+#personal-development {
+  grid-area: personal-development;
+}
+
+#career-coaching {
+  grid-area: career-coaching;
+}
+
+#relationship-coaching {
+  grid-area: relationship-coaching;
+}
+
+#group-coaching {
+  grid-area: group-coaching;
+}
+
+#supportive-community {
+  grid-area: supportive-community;
+}
+
+#focused-session {
+  grid-area: focused-session;
 }
 
 .card {
@@ -246,10 +272,61 @@ footer a:visited {
 
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
-@media screen and (min-width: 834px) {}
+@media screen and (min-width: 620px) {
+
+  #small-screen {
+    display: none;
+  }
+
+  header #large-screen {
+    display: block;
+  }
+
+  #one-on-one-container {
+    display: grid;
+    grid-template-areas:
+      "one-on-one-coaching one-on-one-coaching"
+      "personal-development career-coaching"
+      "relationship-coaching relationship-coaching"
+    ;
+    gap: 1em;
+  }
+
+  #group-coaching-container {
+    display: flex;
+    gap: 1em;
+  }
+
+  #why-choose-us ul {
+    display: flex;
+  }
+
+  #pricing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+  }
+}
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 950px) {
+  #small-screen {
+    display: none;
+  }
+
+  header #large-screen {
+    display: block;
+  }
+
+
+
+}
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1280px) {}
