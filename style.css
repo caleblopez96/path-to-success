@@ -151,6 +151,7 @@ section h3 {
   padding: 1.25em;
   line-height: 1.75em;
   margin: 1em 0;
+  height: auto;
 }
 
 #why-choose-us {
@@ -324,8 +325,38 @@ footer a:visited {
     display: block;
   }
 
+  #services-container {
+    display: flex;
+    gap: 1em;
+    height: auto;
+  }
 
+  #one-on-one-container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  #group-coaching-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #why-choose-us ul {
+    display: flex;
+
+  }
+
+  #pricing-container {
+    display: flex;
+    gap: 1em 0;
+    justify-content: space-evenly;
+  }
+
+  #contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+  }
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
