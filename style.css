@@ -300,6 +300,7 @@ footer a:visited {
 
   #why-choose-us ul {
     display: flex;
+    width: 100%;
   }
 
   #pricing-container {
@@ -343,7 +344,7 @@ footer a:visited {
 
   #why-choose-us ul {
     display: flex;
-
+    justify-content: space-evenly;
   }
 
   #pricing-container {
