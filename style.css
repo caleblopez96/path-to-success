@@ -118,7 +118,6 @@ section h3 {
 
 #services {
   padding: 0 1em;
-  /* i moved this from the main,nav{} selector*/
 }
 
 #personal-development {
@@ -152,6 +151,7 @@ section h3 {
   line-height: 1.75em;
   margin: 1em 0;
   height: auto;
+
 }
 
 #why-choose-us {
@@ -318,6 +318,34 @@ footer a:visited {
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media screen and (min-width: 950px) {
+
+  nav h2 {
+    display: none;
+  }
+
+  nav ul {
+    visibility: visible;
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--yellow);
+    padding: 1em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: bold;
+  }
+
   #small-screen {
     display: none;
   }
@@ -332,9 +360,15 @@ footer a:visited {
     height: auto;
   }
 
+  #services h3 {
+    text-align: center;
+    font-size: 1.25em;
+  }
+
   #one-on-one-container {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 
   #group-coaching-container {
@@ -350,7 +384,11 @@ footer a:visited {
   #pricing-container {
     display: flex;
     gap: 1em 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+
+  #pricing-container h3 {
+    font-size: 1.25em;
   }
 
   #contact-container {
@@ -361,4 +399,8 @@ footer a:visited {
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+  body {
+    padding: 0 5em;
+  }
+}
